@@ -29,7 +29,9 @@ function test(): void
     $testGraph->addEdge($v7, $v8);
 
     $sort = new TopologicalSorting();
-    $sort->sort($testGraph);
+    foreach ($sort->sort($testGraph) as $item) {
+        echo $item->getData() . PHP_EOL;
+    }
 }
 
 test();

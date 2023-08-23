@@ -4,7 +4,7 @@ namespace Algorithms\TopologicalSorting;
 
 class TopologicalSorting
 {
-    public function sort(Graph $graph): void
+    public function sort(Graph $graph): array
     {
         $stack = [];
         $visitedVertices = [];
@@ -15,9 +15,7 @@ class TopologicalSorting
             }
         }
 
-        foreach (array_reverse($stack) as $vertex) {
-            echo $vertex->getData() . PHP_EOL;
-        }
+        return array_reverse($stack);
     }
     private function depthFirstTraversal(Vertex $vertex, array& $visitedVertices, array& $stack): void
     {

@@ -1,0 +1,17 @@
+{
+    "name": "michal/topological-sorting",
+    "type": "project",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Algorithms\\TopologicalSorting\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "michaldabrowski98",
+            "email": "mdboxman@gmail.com"
+        }
+    ],
+    "require": {}
+}
